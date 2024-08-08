@@ -1,0 +1,61 @@
+.task-item {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.2)
+  );
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-content {
+  font-size: 16px;
+  margin-right: 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-check {
+  color: green;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.fa-trash {
+  color: rgba(212, 34, 40, 0.8);
+  transition: color 0.2s;
+}
+
+.edit-icon {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fa-check:hover {
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+  color: rgba(212, 34, 40, 1);
+}
+
+.edit-icon:hover {
+  cursor: pointer;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}

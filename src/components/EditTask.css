@@ -1,0 +1,86 @@
+#edit-task-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#edit-task-window {
+  border: 2px solid red;
+  width: 40%;
+  padding: 48px 36px 72px 36px;
+  text-align: center;
+  background-image: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.9)
+  );
+}
+
+.edit-task-title {
+  font-size: 36px;
+  margin-bottom: 36px;
+  color: rgba(122, 213, 185, 0.85);
+}
+
+.edit-task-input {
+  width: 80%;
+  margin-bottom: 24px;
+}
+
+.edit-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.task-btn {
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: none;
+}
+
+.edit {
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(122, 213, 185, 0.8);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+.cancel {
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(212, 34, 40, 0.6);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+.edit:hover {
+  cursor: pointer;
+  background-color: rgba(122, 213, 185, 0.95);
+  box-shadow: rgba(122, 213, 185, 0.8) 0px 3px 10px;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  background-color: rgba(212, 34, 40, 0.75);
+  box-shadow: rgba(212, 34, 40, 0.6) 0px 3px 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}

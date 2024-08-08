@@ -1,0 +1,59 @@
+#top-section {
+  background-image: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.95)
+  );
+  text-align: center;
+  padding: 24px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  color: rgba(255, 82, 35, 1);
+}
+
+.input-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+input {
+  width: 60%;
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.add-task-button {
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(122, 213, 185, 0.8);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+.add-task-button:hover {
+  cursor: pointer;
+  background-color: rgba(122, 213, 185, 0.95);
+  box-shadow: rgba(122, 213, 185, 0.8) 0px 3px 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .input-button-section {
+    flex-direction: column;
+  }
+
+  input {
+    width: 90%;
+  }
+}
